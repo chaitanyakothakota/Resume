@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+.container {
+    max-width: 900px;
+    margin: 5% auto 2.5%;
+    padding: 2.5%;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+.header {
+    text-align: center;
+    margin-bottom: 2.5%;
+}
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+    text-transform:uppercase;
+}
+.header h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+.header p {
+    margin: 1% 0;
+    color: #333;
+}
+.header a {
+    color: #495057;
+    text-decoration: none;
+}
+.section-title {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 1%;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5%;
+}
+.section {
+    margin-bottom: 2.5%;
+}
+.skills span {
+    display: inline-block;
+    margin: 1%;
+    padding: 1% 1.5%;
+    background: #e9ecef;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #495057;
+}
+.experience, .education, .certificates, .courses, .other {
+    list-style: none;
+    padding: 0;
+     margin-bottom: 2%;
+}
+.experience li, .education li, .certificates li, .courses li, .other li {
+    margin-bottom: 2%;
+}
+.experience h5, .education h5, .certificates h5, .courses h5, .other h5 {
+    margin: 0 0 0.5%;
+    font-size: 16px;
+}
+.experience p, .education p, .certificates p, .courses p, .other p {
+    margin: 0;
+    color: #666;
+}
+.experience .info, .education .info , .certificates .info, .courses .info, .other .info {
+    display: flex;
+    justify-content: space-between;
+}
+.left-column {
+    width:43%;
+    float: left;
+    margin: 0% 0.5%;
+}
+.right-column {
+    width: 53%;
+    float: right ;
+    margin: 0% 0.5%;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.btn-download {
+    display: block;
+    margin: 0 auto;
+    background: #007bff;
+    color: #fff;
+    padding: 1% 2%;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn-download:hover {
+    background: #0056b3;
+}
+@media print {
+    body {
+        -webkit-print-color-adjust: exact;
+    }
+    .container {
+        page-break-inside: avoid;
+        max-width: 850px;
+        width: 100%;
+        margin: 0;
+        padding: 5%;
+        border: none;
+    }
+    .btn-download {
+        display: none;
+    }
+}
