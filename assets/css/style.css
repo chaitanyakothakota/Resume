@@ -13,7 +13,8 @@ body {
     min-width: 800px;
     max-width: 900px;
 }
-.resume-container {
+.resume-container,
+.coverletter-container {
     max-width: 900px;
     margin: 5% auto;
     padding: 2.5%;
@@ -126,7 +127,8 @@ body {
 
 /* Media Queries */
 @media screen and (max-width: 1024px) {
-    .resume-container {
+    .resume-container,
+    .coverletter-container {
         width: 80%; /* Adjust width for tablet */
     }
     .header h1 {
@@ -153,7 +155,8 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .resume-container {
+    .resume-container,
+    .coverletter-container {
         width: 90%; /* Adjust width for smaller tablet view */
     }
     .header h1 {
@@ -180,7 +183,8 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-    .resume-container {
+    .resume-container,
+    .coverletter-container {
         padding: 5%;
         width: 100%; /* Full width for mobile */
     }
@@ -214,7 +218,8 @@ body {
         -webkit-print-color-adjust: exact;
         color-adjust: exact;
     }
-    .resume-container {
+    .resume-container,
+    .coverletter-container {
         page-break-inside: avoid;
         max-width: 1080px;
         width: 100%;
@@ -227,3 +232,9 @@ body {
         display: none;
     }
 }
+
+
+/* ====== RESUME SECTION ========  */
+
+
+/* ====== COVERLETTER SECTION ========  */
