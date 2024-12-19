@@ -13,8 +13,7 @@ body {
     min-width: 800px;
     max-width: 900px;
 }
-.resume-container,
-.coverletter-container {
+.resume-container {
     max-width: 900px;
     margin: 5% auto;
     padding: 2.5%;
@@ -127,8 +126,7 @@ body {
 
 /* Media Queries */
 @media screen and (max-width: 1024px) {
-    .resume-container,
-    .coverletter-container {
+    .resume-container {
         width: 80%; /* Adjust width for tablet */
     }
     .header h1 {
@@ -155,8 +153,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .resume-container,
-    .coverletter-container {
+    .resume-container {
         width: 90%; /* Adjust width for smaller tablet view */
     }
     .header h1 {
@@ -183,8 +180,7 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-    .resume-container,
-    .coverletter-container {
+    .resume-container {
         padding: 5%;
         width: 100%; /* Full width for mobile */
     }
@@ -218,8 +214,7 @@ body {
         -webkit-print-color-adjust: exact;
         color-adjust: exact;
     }
-    .resume-container,
-    .coverletter-container {
+    .resume-container {
         page-break-inside: avoid;
         max-width: 1080px;
         width: 100%;
@@ -238,3 +233,166 @@ body {
 
 
 /* ====== COVERLETTER SECTION ========  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+.container {
+    max-width: 900px;
+    margin: 2.5% auto;
+    width: 100%;
+    min-width: 800px;
+    max-width: 900px;
+}
+.coverletter-container {
+    max-width: 900px;
+    margin: 5% auto;
+    padding: 2.5%;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /* Adjust for A4 paper size */
+    min-width: 800px;
+    max-width: 900px;
+}
+.coverletter-body h5 {
+    margin: 2.5% 2.5%;
+}
+.coverletter-body p {
+    margin: 0.5% 2.5% 2%;
+    text-indent: 10%;
+    text-align: justify;
+}
+.coverletter-body .signature {
+    text-align: right;
+    margin-right: 2.5%;
+}
+.header {
+    text-align: center;
+    margin-bottom: 2.5%;
+}
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #333;
+}
+.header h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #777;
+}
+.header p {
+    margin: 0.5% 0;
+    color: #495057;
+}
+.header a {
+    color: #6c757d;
+    text-decoration: none;
+    word-break: break-word;
+}
+.header a:hover {
+    color: #495057;
+    text-decoration: underline;
+}
+.section-title {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 1%;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5%;
+    font-weight: 600;
+}
+.section {
+    margin-bottom: 2.5%;
+}
+.btn-download {
+    display: block;
+    margin: 20px auto;
+    background: #6c757d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+.btn-download:hover {
+    background: #5a6268;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    .coverletter-container {
+        width: 80%; /* Adjust width for tablet */
+    }
+    .header h1 {
+        font-size: 24px;
+    }
+    .header h2 {
+        font-size: 16px;
+    }
+    .btn-download {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .coverletter-container {
+        width: 90%; /* Adjust width for smaller tablet view */
+    }
+    .header h1 {
+        font-size: 22px;
+    }
+    .header h2 {
+        font-size: 14px;
+    }
+    .btn-download {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .coverletter-container {
+        padding: 5%;
+        width: 100%; /* Full width for mobile */
+    }
+    .header h1 {
+        font-size: 20px;
+    }
+    .header h2 {
+        font-size: 12px;
+    }
+    .btn-download {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+}
+
+/* Print Styles (For A4-like View) */
+@media print {
+    body {
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+    .coverletter-container {
+        page-break-inside: avoid;
+        max-width: 1080px;
+        width: 100%;
+        margin: 0;
+        padding: 5%;
+        border: none;
+        box-shadow: none;
+    }
+    .btn-download {
+        display: none;
+    }
+}
